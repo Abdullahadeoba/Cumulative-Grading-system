@@ -19,6 +19,12 @@ function calc() {
             } else if (cumu >= 40 && cumu < 60) {
                 result.innerHTML = "Your score is " + cumu + "%. Well done, however, this is not good enough. Please try harder next year, " + studentName.value
                 result.style.color = "yellow"
+            } else if (cumu >= 60 && cumu < 70) {
+                result.innerHTML = "Your score is " + cumu + "%. Well done, however, this is not good enough. Please try harder next year, " + studentName.value
+                result.style.color = "yellow"
+            } else if (cumu >= 70 && cumu < 100) {
+                result.innerHTML = "Your score is " + cumu + "%. Well done, however, this is not good enough. Please try harder next year, " + studentName.value
+                result.style.color = "yellow"
             }
             }   
            
