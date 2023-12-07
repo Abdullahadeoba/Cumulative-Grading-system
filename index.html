@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container shadow-lg rounded-5">
+        <h3 class="text-center text-decoration-underline my-2">Cumulative Result calculator</h3>
+        <div class="row">
+            <div class="col-lg-5 col-12 rounded-4 " id="firstDiv">
+                
+            </div>
+            <div class="col-lg-5 col-12 mx-auto mt-lg-0 mt-3">
+                <div class="row">
+                    <div class="alert alert-danger p-2 text-center" style="display: none;" id="err">Spaces cannot be empty</div>
+                    <div class="col-6">
+                        <input type="text" class="form-control form-control-sm my-3" placeholder="Enter the student name" required id="studentName" autofocus>
+                        <input type="number" class="form-control form-control-sm my-3" placeholder="Biology" required id="biology" maxlength="3">
+                        <input type="number" class="form-control form-control-sm my-3" placeholder="Chemistry" required id="chemistry">
+                        <input type="number" class="form-control form-control-sm my-3" placeholder="Physics" required id="physics">
+                    </div>
+                    <div class="col-6">
+                        <input type="number" class="form-control form-control-sm my-3" placeholder="Enter the student ID" required id="studentID">
+                        <input type="number" class="form-control form-control-sm my-3" placeholder="Mathematics" required id="math">
+                        <input type="number" class="form-control form-control-sm my-3" placeholder="Geography" required id="geo">
+                        <input type="number" class="form-control form-control-sm my-3" placeholder="English" required id="eng">
+                    </div>
+                    <button class="my-2 btn btn-sm" onclick="calc()">Calculate Grade</button>
+                    <div class="my-3 p-2">
+                        <p class="showDiv" id="intro"></p>
+                        <p class="showDiv" id="note"></p>
+                        <p class="showDiv" id="result"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

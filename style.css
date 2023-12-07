@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+body {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1c;
+    font-family: 'Nova Square', sans-serif;
+    transition: 3s;
+}
+
+#firstDiv {
+    background: url("grading\ pro.avif");
+    background-size: cover;
+    height: 85vh;
+    filter: brightness(.5);
+}
+
+button {
+    background-color: #1c1c1c !important;
+    color: #fa3d3b !important;
+}
+
+.showDiv {
+    color: #c6c6c6 !important;
+    text-align: justify !important;
+    margin: 20px 0px !important;
+}
+
+.showDiv:nth-child(1) {
+    text-decoration: underline #fa3d3b !important;
+    font-size: 2rem;
+}
+
+button:hover {
+    background-color: #c6c6c6 !important;
+}
+
+input:focus {
+    box-shadow: none !important;
+}
+
+div > h3 {
+    color: #fa3d3b;
+}
+
+input, button {
+    border: 2px solid #fa3d3b !important;
+}
+
+@media screen and (min-width: 250px) and (max-width: 992px) {
+    #firstDiv {
+        height: 40vh;
+    }
+}
