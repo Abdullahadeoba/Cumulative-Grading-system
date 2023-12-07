@@ -7,15 +7,20 @@ function calc() {
             err.style.display = "none"
             var sum = Number(biology.value) + Number(physics.value) + Number(chemistry.value) + Number(math.value) + Number(geo.value) + Number(eng.value)
             var cumu = ((sum/600) * 100).toFixed(2)
-            
+           if (sum > 600){
+            alert("Bro fear god") 
+             } else{
             intro.innerHTML = "Welcome " + document.getElementById('studentName').value
             note.innerHTML = "It is my utmost pleasure to sincerely appreciate your efforts for this semester. Please, find below how you have performed. Best regards👋."
-
-            if(cumu >= 0 && cumu <40) {
+       
+             if(cumu >= 0 && cumu <40) {
                 result.innerHTML = "Your score is " + cumu + "%. Unfortunately, you will not be progressing to the next level. I will suggest you reconsider your intent to study in our noble institution. Thank you and best wishes."
             } else if (cumu >= 40 && cumu < 60) {
                 result.innerHTML = "Your score is " + cumu + "%. Well done, however, this is not good enough. Please try harder next year, " + studentName.value
+                result.style.color = "yellow"
             }
+            }   
+           
 
             document.getElementById('biology').value = ""
             document.getElementById('studentName').value = ""

@@ -41,7 +41,9 @@ input:focus {
 }
 
 div > h3 {
-    color: #fa3d3b;
+    color: black;
+    font-family: serif;
+    font-weight: bold;
 }
 
 input, button {
