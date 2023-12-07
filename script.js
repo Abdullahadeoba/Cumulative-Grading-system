@@ -15,6 +15,7 @@ function calc() {
        
              if(cumu >= 0 && cumu <40) {
                 result.innerHTML = "Your score is " + cumu + "%. Unfortunately, you will not be progressing to the next level. I will suggest you reconsider your intent to study in our noble institution. Thank you and best wishes."
+                result.style.color = "black"
             } else if (cumu >= 40 && cumu < 60) {
                 result.innerHTML = "Your score is " + cumu + "%. Well done, however, this is not good enough. Please try harder next year, " + studentName.value
                 result.style.color = "yellow"
