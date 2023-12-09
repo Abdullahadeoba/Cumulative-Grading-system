@@ -18,6 +18,7 @@ function calc() {
                 result.style.color = "black"
             } else if (cumu >= 40 && cumu < 60) {
                 result.innerHTML = "Your score is " + cumu + "%. Well done, however, this is not good enough. Please try harder next year, " + studentName.value
+                note.innerHTML = "You are still in the average part.Try harder next semester.Thanks🤣😂"
                 result.style.color = "yellow"
             } else if (cumu >= 60 && cumu < 70) {
                 result.innerHTML = "Your score is " + cumu + "%. Well done, however, this is not good enough. Please try harder next year, " + studentName.value

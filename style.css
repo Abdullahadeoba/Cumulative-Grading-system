@@ -42,7 +42,7 @@ input:focus {
 
 div > h3 {
     color: black;
-    font-family: serif;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
 
