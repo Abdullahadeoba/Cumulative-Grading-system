@@ -4,7 +4,7 @@ body {
     padding: 30px;
     justify-content: center;
     align-items: center;
-    background-color:aliceblue;
+    background-color: #1c1c1c;
     font-family: 'Nova Square', sans-serif;
     transition: 3s;
 }
@@ -21,7 +21,7 @@ button {
     color: #fa3d3b !important;
 }
 
-.showDiv {
+.showDiv:nth-child(1), .showDiv:nth-child(2) {
     color: #c6c6c6 !important;
     text-align: justify !important;
     margin: 20px 0px !important;
@@ -30,6 +30,11 @@ button {
 .showDiv:nth-child(1) {
     text-decoration: underline #fa3d3b !important;
     font-size: 2rem;
+}
+
+.showDiv:nth-child(3) {
+    margin: 20px 0px !important;
+    text-align: justify !important;
 }
 
 button:hover {
@@ -41,9 +46,7 @@ input:focus {
 }
 
 div > h3 {
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+    color: #fa3d3b;
 }
 
 input, button {
